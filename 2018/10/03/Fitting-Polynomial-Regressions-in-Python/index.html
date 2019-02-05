@@ -25,10 +25,13 @@
 <meta property="og:site_name" content="Joshua Loong">
 <meta property="og:description" content="The linear regression is one of the first things you do in machine learning. It’s simple, elegant, and can be extremely useful for a variety of problems. But sometimes the data you are representing i">
 <meta property="og:locale" content="default">
+<meta property="og:image" content="http://joshualoong.com/2018/10/03/Fitting-Polynomial-Regressions-in-Python/example.png">
+<meta property="og:image" content="http://joshualoong.com/2018/10/03/Fitting-Polynomial-Regressions-in-Python/statsmodel_summary.png">
 <meta property="og:updated_time" content="2019-01-28T16:49:16.463Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Fitting Polynomial Regressions in Python">
 <meta name="twitter:description" content="The linear regression is one of the first things you do in machine learning. It’s simple, elegant, and can be extremely useful for a variety of problems. But sometimes the data you are representing i">
+<meta name="twitter:image" content="http://joshualoong.com/2018/10/03/Fitting-Polynomial-Regressions-in-Python/example.png">
     
     
         
@@ -154,7 +157,7 @@
   
 
   <div class="content" itemprop="articleBody">
-    
+    <img src="/2018/10/03/Fitting-Polynomial-Regressions-in-Python/example.png">
 <p>The linear regression is one of the first things you do in machine learning. It’s simple, elegant, and can be extremely useful for a variety of problems.</p>
 <p>But sometimes the data you are representing isn’t exactly linear (in the sense that a straight line would not be the most explanatory of your data), so you’ll need to use something else.</p>
 <p>There are a number of non-linear regression methods, but one of the simplest of these is the polynomial regression.</p>
@@ -186,7 +189,7 @@
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> statsmodels.formula.api <span class="keyword">as</span> smf</span><br><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"></span><br><span class="line">x = np.array([<span class="number">0.0</span>, <span class="number">1.0</span>, <span class="number">2.0</span>, <span class="number">3.0</span>,  <span class="number">4.0</span>,  <span class="number">5.0</span>])</span><br><span class="line">y = np.array([<span class="number">0.0</span>, <span class="number">0.8</span>, <span class="number">0.9</span>, <span class="number">0.1</span>, <span class="number">-0.8</span>, <span class="number">-1.0</span>])</span><br><span class="line">degree = <span class="number">3</span></span><br><span class="line"></span><br><span class="line">df = pd.DataFrame(columns=[<span class="string">'y'</span>, <span class="string">'x'</span>])</span><br><span class="line">df[<span class="string">'x'</span>] = x</span><br><span class="line">df[<span class="string">'y'</span>] = y</span><br><span class="line"></span><br><span class="line">weights = np.polyfit(x, y, degree)</span><br><span class="line">model = np.poly1d(weights)</span><br><span class="line">results = smf.ols(formula=<span class="string">'y ~ model(x)'</span>, data=df).fit()</span><br></pre></td></tr></table></figure>
 <p>This <code>results</code> variable is now a statsmodels object, fitted against the model function you declared the line before, and gives you full access to all the great capabilities that the library can provide.</p>
 <p>This includes things like <code>results.summary()</code> which can give a fill regression summary like below:</p>
-
+<img src="/2018/10/03/Fitting-Polynomial-Regressions-in-Python/statsmodel_summary.png">
 <p>It also gives you things like p-values, R-squared, coefficients, standard error, and tons of other info to help you test whether or not your model is performing well or not. This was a huge revelation for me and I just wanted to share.</p>
 <h2 id="Conclusion"><a href="#Conclusion" class="headerlink" title="Conclusion"></a>Conclusion</h2><p>I hope this was a good intro on, not just how to build polynomial curves, but also how to pass them to statsmodels for evaluation. This is much easier than having to write your own helper functions to explain your numpy polyfit behaviour.</p>
 <p>If you have any thoughts, suggestions, or corrections you can reach out to me <a href="https://twitter.com/jtloong" target="_blank" rel="noopener">@jtloong</a> on Twitter or at <a href="mailto:joshua.t.loong@gmail.com" target="_blank" rel="noopener">joshua.t.loong@gmail.com</a></p>
