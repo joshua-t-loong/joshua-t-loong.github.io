@@ -27,7 +27,7 @@
 <meta property="og:locale" content="default">
 <meta property="og:image" content="http://joshualoong.com/2018/10/03/Fitting-Polynomial-Regressions-in-Python/example.png">
 <meta property="og:image" content="http://joshualoong.com/2018/10/03/Fitting-Polynomial-Regressions-in-Python/statsmodel_summary.png">
-<meta property="og:updated_time" content="2019-02-12T21:55:46.142Z">
+<meta property="og:updated_time" content="2019-02-12T21:58:25.792Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Fitting Polynomial Regressions in Python">
 <meta name="twitter:description" content="The linear regression is one of the first things you do in machine learning. It’s simple, elegant, and can be extremely useful for a variety of problems. But sometimes the data you are representing i">
@@ -162,8 +162,8 @@
 <p>But sometimes the data you are representing isn’t exactly linear (in the sense that a straight line would not be the most explanatory of your data), so you’ll need to use something else.</p>
 <p>There are a number of non-linear regression methods, but one of the simplest of these is the polynomial regression.</p>
 <p>While a linear model would take the form:</p>
-<script type="math/tex; mode=display">\begin{equation}<br/>y = \beta_0 + \beta_1 x + \epsilon<br/>\end{equation}\label{eq1}</script><p>A polynomial regression instead could look like:</p>
-<script type="math/tex; mode=display">\begin{equation}<br/>y = \beta_0 + \beta_1 x + \beta_2 x^2 + \beta_3 x^3 + \epsilon<br/>\end{equation}\label{eq2  }</script><p>These types of equations can be extremely useful. With common applications in problems such as the growth rate of tissues, the distribution of carbon isotopes in lake sediments, and the progression of disease epidemics.</p>
+<script type="math/tex; mode=display">\begin{equation}y = \beta_0 + \beta_1 x + \epsilon\end{equation}\label{eq1}</script><p>A polynomial regression instead could look like:</p>
+<script type="math/tex; mode=display">\begin{equation}y = \beta_0 + \beta_1 x + \beta_2 x^2 + \beta_3 x^3 + \epsilon\end{equation}\label{eq2  }</script><p>These types of equations can be extremely useful. With common applications in problems such as the growth rate of tissues, the distribution of carbon isotopes in lake sediments, and the progression of disease epidemics.</p>
 <h2 id="Working-in-Python"><a href="#Working-in-Python" class="headerlink" title="Working in Python"></a>Working in Python</h2><p>Historically, much of the stats world has lived in the world of R while the machine learning world has lived in Python. Given this, there are a lot of problems that are simple to accomplish in R than in Python, and vice versa.</p>
 <p>During the research work that I’m a part of, I found the topic of polynomial regressions to be a bit more difficult to work with on Python. Most of the resources and examples I saw online were with R (or other languages like SAS, Minitab, SPSS).</p>
 <p>I’m a big Python guy. I love the ML/AI tooling, as well as the ability to seamlessly integrate my data science work into actual software. So even though a lot of the traditional statistics stuff isn’t as straightforward, I wanted to find a working solution in my main language. Hopefully this post will help others in my sitauation.</p>
