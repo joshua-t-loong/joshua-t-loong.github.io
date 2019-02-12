@@ -164,10 +164,13 @@
 <h2 id="So-What-is-the-Chow-Break-Test"><a href="#So-What-is-the-Chow-Break-Test" class="headerlink" title="So What is the Chow Break Test?"></a>So What is the Chow Break Test?</h2><p>The Chow break test was developed by econometrician Gregory Chow in 1960 to test for structural breaks within a dataset. It uses different residual sum of squares to calculate whether or not your data is best represented with one linear model or multiple linear models broken up with breaks in time.</p>
 <p>Economic data can often have significant or violent break points that make a single linear regression line from being unfit to represent the data best. For examples of this kind of data <a href="http://www.statisticshowto.com/chow-test/" target="_blank" rel="noopener">Statistics How To outlined some</a>:</p>
 <blockquote>
+<ul>
+- Donations given to an organization before and after a natural disaster.
+- Stock market prices before and after Black Friday.
+</ul>
+
+
 </blockquote>
-<ul><br>- Donations given to an organization before and after a natural disaster.<br>- Stock market prices before and after Black Friday.<br></ul>
-
-
 <p>And more. For this reason, sometimes data can be better modeled with two or more regression lines. If there is a known break point, the Chow break tests measures this by using this formula:<br><img src="/2018/01/05/Building-the-Python-chow-test-Package/chow-test-formula.png"><br>Where:</p>
 <ul>
 <li>RSS<sub>p</sub> is the residual sum of squares for the linear regression without breaks.</li>
@@ -185,6 +188,7 @@
 <p>The function itself has five parameters:<br></p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">chow_test.calculate(Year, data, timeColumn, x_column, y_column)</span><br></pre></td></tr></table></figure>
 <p>Where the parameter requirements are:</p>
+<div class="table-container">
 <table>
 <thead>
 <tr>
@@ -215,6 +219,7 @@
 </tr>
 </tbody>
 </table>
+</div>
 <p>When called, the data is handled like so:<br></p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">rss_total = find_rss(data, x_column, y_column)</span><br><span class="line">rss_1 = find_rss(data[data[timeColumn] &amp;lt; break_point], x_column, y_column)</span><br><span class="line">rss_2 = find_rss(data[data[timeColumn] &amp;gt; (break_point - <span class="number">1</span>)], x_column, y_column)</span><br></pre></td></tr></table></figure>
 <p>The calculate function then has a subfunction called find_rss, which outputs the residual sum of squares for each regression line t like so:<br></p>
@@ -308,6 +313,21 @@
 </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/jquery.timeliny@1.0.1/dist/jquery.timeliny.min.js"></script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 </body>
 </html>
 <!-- styles -->

@@ -124,6 +124,7 @@
 <h1 id="Projects"><a href="#Projects" class="headerlink" title="Projects"></a>Projects</h1><p>My Github contributions over the last year:</p>
 <p><img src="http://ghchart.rshah.org/jtloong" alt="jtloong's Github chart"></p>
 <p>And here are some of the things I am working on or have worked on recently. You can see more them more thoroughly on my <a href="https://github.com/jtloong" target="_blank" rel="noopener">Github</a>.</p>
+<div class="table-container">
 <table>
 <thead>
 <tr>
@@ -184,6 +185,7 @@
 </tr>
 </tbody>
 </table>
+</div>
 
   </div>
 </article>
@@ -214,6 +216,21 @@
 </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/jquery.timeliny@1.0.1/dist/jquery.timeliny.min.js"></script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 </body>
 </html>
 <!-- styles -->

@@ -27,7 +27,7 @@
 <meta property="og:locale" content="default">
 <meta property="og:image" content="http://joshualoong.com/2018/10/03/Fitting-Polynomial-Regressions-in-Python/example.png">
 <meta property="og:image" content="http://joshualoong.com/2018/10/03/Fitting-Polynomial-Regressions-in-Python/statsmodel_summary.png">
-<meta property="og:updated_time" content="2019-01-28T16:49:16.463Z">
+<meta property="og:updated_time" content="2019-02-12T21:55:46.142Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Fitting Polynomial Regressions in Python">
 <meta name="twitter:description" content="The linear regression is one of the first things you do in machine learning. It’s simple, elegant, and can be extremely useful for a variety of problems. But sometimes the data you are representing i">
@@ -162,10 +162,8 @@
 <p>But sometimes the data you are representing isn’t exactly linear (in the sense that a straight line would not be the most explanatory of your data), so you’ll need to use something else.</p>
 <p>There are a number of non-linear regression methods, but one of the simplest of these is the polynomial regression.</p>
 <p>While a linear model would take the form:</p>
-<p>$$\begin{equation}<br>y = \beta_0 + \beta_1 x + \epsilon<br>\end{equation}\label{eq1}$$</p>
-<p>A polynomial regression instead could look like:</p>
-<p>$$\begin{equation}<br>y = \beta_0 + \beta_1 x + \beta_2 x^2 + \beta_3 x^3 + \epsilon<br>\end{equation}\label{eq2  }$$</p>
-<p>These types of equations can be extremely useful. With common applications in problems such as the growth rate of tissues, the distribution of carbon isotopes in lake sediments, and the progression of disease epidemics.</p>
+<script type="math/tex; mode=display">\begin{equation}<br/>y = \beta_0 + \beta_1 x + \epsilon<br/>\end{equation}\label{eq1}</script><p>A polynomial regression instead could look like:</p>
+<script type="math/tex; mode=display">\begin{equation}<br/>y = \beta_0 + \beta_1 x + \beta_2 x^2 + \beta_3 x^3 + \epsilon<br/>\end{equation}\label{eq2  }</script><p>These types of equations can be extremely useful. With common applications in problems such as the growth rate of tissues, the distribution of carbon isotopes in lake sediments, and the progression of disease epidemics.</p>
 <h2 id="Working-in-Python"><a href="#Working-in-Python" class="headerlink" title="Working in Python"></a>Working in Python</h2><p>Historically, much of the stats world has lived in the world of R while the machine learning world has lived in Python. Given this, there are a lot of problems that are simple to accomplish in R than in Python, and vice versa.</p>
 <p>During the research work that I’m a part of, I found the topic of polynomial regressions to be a bit more difficult to work with on Python. Most of the resources and examples I saw online were with R (or other languages like SAS, Minitab, SPSS).</p>
 <p>I’m a big Python guy. I love the ML/AI tooling, as well as the ability to seamlessly integrate my data science work into actual software. So even though a lot of the traditional statistics stuff isn’t as straightforward, I wanted to find a working solution in my main language. Hopefully this post will help others in my sitauation.</p>
@@ -193,7 +191,18 @@
 <p>It also gives you things like p-values, R-squared, coefficients, standard error, and tons of other info to help you test whether or not your model is performing well or not. This was a huge revelation for me and I just wanted to share.</p>
 <h2 id="Conclusion"><a href="#Conclusion" class="headerlink" title="Conclusion"></a>Conclusion</h2><p>I hope this was a good intro on, not just how to build polynomial curves, but also how to pass them to statsmodels for evaluation. This is much easier than having to write your own helper functions to explain your numpy polyfit behaviour.</p>
 <p>If you have any thoughts, suggestions, or corrections you can reach out to me <a href="https://twitter.com/jtloong" target="_blank" rel="noopener">@jtloong</a> on Twitter or at <a href="mailto:joshua.t.loong@gmail.com" target="_blank" rel="noopener">joshua.t.loong@gmail.com</a></p>
-<h2 id="Sources"><a href="#Sources" class="headerlink" title="Sources"></a>Sources</h2><li><a href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.polyfit.html" target="_blank" rel="noopener">https://docs.scipy.org/doc/numpy/reference/generated/numpy.polyfit.html</a><br></li><br><li><a href="http://statisticsbyjim.com/regression/curve-fitting-linear-nonlinear-regression/" target="_blank" rel="noopener">http://statisticsbyjim.com/regression/curve-fitting-linear-nonlinear-regression/</a><br></li><br><li><a href="https://www.analyticsvidhya.com/blog/2018/03/introduction-regression-splines-python-codes/" target="_blank" rel="noopener">https://www.analyticsvidhya.com/blog/2018/03/introduction-regression-splines-python-codes/</a><br></li><br><li><a href="http://www.statsmodels.org/stable/generated/statsmodels.regression.linear_model.OLS.from_formula.html" target="_blank" rel="noopener">http://www.statsmodels.org/stable/generated/statsmodels.regression.linear_model.OLS.from_formula.html</a><br></li><br><li><a href="http://www.statsmodels.org/devel/example_formulas.html" target="_blank" rel="noopener">http://www.statsmodels.org/devel/example_formulas.html</a><br></li><br><li><a href="https://en.wikipedia.org/wiki/Polynomial_regression" target="_blank" rel="noopener">https://en.wikipedia.org/wiki/Polynomial_regression</a><br></li>
+<h2 id="Sources"><a href="#Sources" class="headerlink" title="Sources"></a>Sources</h2><li>[https://docs.scipy.org/doc/numpy/reference/generated/numpy.polyfit.html](https://docs.scipy.org/doc/numpy/reference/generated/numpy.polyfit.html)
+</li>
+<li>[http://statisticsbyjim.com/regression/curve-fitting-linear-nonlinear-regression/](http://statisticsbyjim.com/regression/curve-fitting-linear-nonlinear-regression/)
+</li>
+<li>[https://www.analyticsvidhya.com/blog/2018/03/introduction-regression-splines-python-codes/](https://www.analyticsvidhya.com/blog/2018/03/introduction-regression-splines-python-codes/)
+</li>
+<li>[http://www.statsmodels.org/stable/generated/statsmodels.regression.linear_model.OLS.from_formula.html](http://www.statsmodels.org/stable/generated/statsmodels.regression.linear_model.OLS.from_formula.html)
+</li>
+<li>[http://www.statsmodels.org/devel/example_formulas.html](http://www.statsmodels.org/devel/example_formulas.html)
+</li>
+<li>[https://en.wikipedia.org/wiki/Polynomial_regression](https://en.wikipedia.org/wiki/Polynomial_regression)
+</li>
 
   </div>
 </article>
@@ -278,6 +287,21 @@
 </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/jquery.timeliny@1.0.1/dist/jquery.timeliny.min.js"></script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 </body>
 </html>
 <!-- styles -->

@@ -169,11 +169,35 @@
 <h2 id="Installing-Open-edX-a-Dummy’s-Survival-Guide"><a href="#Installing-Open-edX-a-Dummy’s-Survival-Guide" class="headerlink" title="Installing Open edX: a (Dummy’s) Survival Guide"></a>Installing Open edX: a (Dummy’s) Survival Guide</h2><ol>
 <li>Install <a href="https://docs.docker.com/compose/install/" target="_blank" rel="noopener">docker-compose</a></li>
 <li>Make sure you have <strong>make</strong> and <strong>pip</strong> installed</li>
-<li>Install <a href="http://docs.python-guide.org/en/latest/dev/virtualenvs/#lower-level-virtualenv" target="_blank" rel="noopener">virtualenv</a></li><li>Clone this repository using:<br><figure class="highlight zsh"><table><tbody><td class="gutter"><pre>1<br></pre></td><td class="code"><pre>git clone <a href="https://github.com/democracykit/devstack.git" target="_blank" rel="noopener">https://github.com/democracykit/devstack.git</a><br></pre></td><br></tbody></table></figure><br></li><br><li>Move into the project folder and create a virtualenv using:<br><figure class="highlight zsh"><table><tbody><td class="gutter"><pre>1<br>2<br></pre></td><td class="code"><pre>cd devstack<br>virtualenv democracykit<br></pre></td><br></tbody></table></figure><br></li><br><li>Then install requirements like so:<br><figure class="highlight zsh"><table><tbody><td class="gutter"><pre>1<br></pre></td><td class="code"><pre>make requirements<br></pre></td><br></tbody></table></figure><br></li><br><li>The Docker Compose file mounts a host volume for each service’s executing code by conducting this command:<br><figure class="highlight zsh"><table><tbody><td class="gutter"><pre>1<br></pre></td><td class="code"><pre>make dev.clone<br></pre></td><br></tbody></table></figure><br></li><br><li>Run the provision command to configure the superusers which may take a while (my installation took almost half an hour):<br><figure class="highlight zsh"><table><tbody><td class="gutter"><pre>1<br></pre></td><td class="code"><pre>make dev.provision<br></pre></td><br></tbody></table></figure><br></li><br><li>Start the services (this may take up to 60 seconds to appear even after all the checks say done):<br><figure class="highlight zsh"><table><tbody><td class="gutter"><pre>1<br></pre></td><td class="code"><pre>make dev.up<br></pre></td><br></tbody></table></figure><br></li>
+<li>Install <a href="http://docs.python-guide.org/en/latest/dev/virtualenvs/#lower-level-virtualenv" target="_blank" rel="noopener">virtualenv</a></li><li>Clone this repository using:
+<figure class="highlight zsh"><table><tbody><td class="gutter"><pre>1<br></pre></td><td class="code"><pre>git clone https://github.com/democracykit/devstack.git<br></pre></td>
+</tbody></table></figure>
+</li>
+<li>Move into the project folder and create a virtualenv using:
+<figure class="highlight zsh"><table><tbody><td class="gutter"><pre>1<br>2<br></pre></td><td class="code"><pre>cd devstack<br>virtualenv democracykit<br></pre></td>
+</tbody></table></figure>
+</li>
+<li>Then install requirements like so:
+<figure class="highlight zsh"><table><tbody><td class="gutter"><pre>1<br></pre></td><td class="code"><pre>make requirements<br></pre></td>
+</tbody></table></figure>
+</li>
+<li>The Docker Compose file mounts a host volume for each service’s executing code by conducting this command:
+<figure class="highlight zsh"><table><tbody><td class="gutter"><pre>1<br></pre></td><td class="code"><pre>make dev.clone<br></pre></td>
+</tbody></table></figure>
+</li>
+<li>Run the provision command to configure the superusers which may take a while (my installation took almost half an hour):
+<figure class="highlight zsh"><table><tbody><td class="gutter"><pre>1<br></pre></td><td class="code"><pre>make dev.provision<br></pre></td>
+</tbody></table></figure>
+</li>
+<li>Start the services (this may take up to 60 seconds to appear even after all the checks say done):
+<figure class="highlight zsh"><table><tbody><td class="gutter"><pre>1<br></pre></td><td class="code"><pre>make dev.up<br></pre></td>
+</tbody></table></figure>
+</li>
 
 
 </ol>
 <p>And voila! You should have a version of Open EdX devstack running on your local machine. All of the services are running at the following links:</p>
+<div class="table-container">
 <table>
 <thead>
 <tr>
@@ -204,6 +228,7 @@
 </tr>
 </tbody>
 </table>
+</div>
 <p>Once you’re done with working for the day you can stop the services using:<br></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">make stop</span><br></pre></td></tr></table></figure>
 <h2 id="Actually-Developing"><a href="#Actually-Developing" class="headerlink" title="Actually Developing"></a>Actually Developing</h2><p>Now you’ve installed a wackload of code and files, and set up your databases. Now to actually develop the frontend you have to navigate this tree of folders.</p>
@@ -294,6 +319,21 @@
 </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/jquery.timeliny@1.0.1/dist/jquery.timeliny.min.js"></script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 </body>
 </html>
 <!-- styles -->

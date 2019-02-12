@@ -164,7 +164,14 @@
 <p>Each line has a type of change (with a different colour for each), the file name, and size. This way I could easily double check I’m not breaking anything before I push to Github.</p>
 <h2 id="Do-you-have-your-own-problem-you-need-to-solve"><a href="#Do-you-have-your-own-problem-you-need-to-solve" class="headerlink" title="Do you have your own problem you need to solve?"></a>Do you have your own problem you need to solve?</h2><p>I actually haven’t done too much bash scripting before, but after doing this mini-project I think it’s extremely useful to learn how to make your own custom commands. This is especially apparent when interacting with software where you have to repeat a lot of commands in the terminal (like git).</p>
 <p>So how do you do you make your own custom git command? It’s actually incredibly easy:</p>
-<li>Write a bash script to accomplish a repetitive or annoying task. You can use <a href="https://github.com/jtloong/git-status-size/blob/master/git-status-size" target="_blank" rel="noopener">mine for reference</a> and title it something like <code>git-do-annoying-task</code>.<br></li><br><li>To invoke it anywhere you’ll need to export the file into your PATH. In your script file use <code>export PATH=&quot;/path/to/your-script/directory:$PATH</code><sup>1</sup>.<br></li><br><li>Once the script is moved, you’ll need to make it executable. You can just move into that folder and execute <code>chmod +x git-do-annoying-task</code>.<br></li><br><li>Now try it out! Move to any repo you have on your machine and try <code>git do-annoying-task</code> and voila! you have your own custom git command.<br></li>
+<li>Write a bash script to accomplish a repetitive or annoying task. You can use [mine for reference](https://github.com/jtloong/git-status-size/blob/master/git-status-size) and title it something like `git-do-annoying-task`.
+</li>
+<li>To invoke it anywhere you’ll need to export the file into your PATH. In your script file use `export PATH="/path/to/your-script/directory:$PATH`<sup>1</sup>.
+</li>
+<li>Once the script is moved, you’ll need to make it executable. You can just move into that folder and execute `chmod +x git-do-annoying-task`.
+</li>
+<li>Now try it out! Move to any repo you have on your machine and try `git do-annoying-task` and voila! you have your own custom git command.
+</li>
 
 <p>Now this principle also applies if you want to simplify any type of workflow on your computer, not just git. I just wanted to use git because its such a common thing many developers have to work with.</p>
 <h2 id="Thanks-for-reading"><a href="#Thanks-for-reading" class="headerlink" title="Thanks for reading!"></a>Thanks for reading!</h2><p>Thanks for reading this mini-blog post. I hope this helps anyone that has had an issue with git or some other terminal process that you need to simplify.</p>
@@ -255,6 +262,21 @@
 </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/jquery.timeliny@1.0.1/dist/jquery.timeliny.min.js"></script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 </body>
 </html>
 <!-- styles -->
