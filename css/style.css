@@ -1414,7 +1414,7 @@ article .content .project-img {
   border-bottom: 1px solid #666;
 }
 pre {
-  font-family: "Rubik";
+  font-family: $font-family-mono;
   font-size: 13px;
   padding: 10px 15px;
   padding-bottom: 0;
@@ -1436,7 +1436,7 @@ pre code {
   padding: 0;
 }
 .highlight {
-  font-family: "Rubik";
+  font-family: $font-family-mono;
   background: #333;
   -webkit-border-radius: 4px;
   border-radius: 4px;

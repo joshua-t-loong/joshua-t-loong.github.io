@@ -26,7 +26,7 @@
 <meta property="og:description" content="In my spare time I like to do online courses. Some of them are free, like the ones on Coursera and edX, and some of them I pick up on sale, like the ones at Udemy, to build up my skills in my spare ti">
 <meta property="og:locale" content="default">
 <meta property="og:image" content="http://joshualoong.com/2018/01/05/Building-the-Python-chow-test-Package/chow-test-formula.png">
-<meta property="og:updated_time" content="2019-01-28T16:49:14.536Z">
+<meta property="og:updated_time" content="2019-03-05T23:02:07.198Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Building the Python chow_test Package">
 <meta name="twitter:description" content="In my spare time I like to do online courses. Some of them are free, like the ones on Coursera and edX, and some of them I pick up on sale, like the ones at Udemy, to build up my skills in my spare ti">
@@ -163,14 +163,10 @@
 <p>Now the test is relatively simple to build from scratch, which I did when first completing the assignment, but would be tedious if you needed to do it often. When I was looking around online there were already implementations in both <a href="https://support.sas.com/rnd/app/ets/examples/chow/index.htm" target="_blank" rel="noopener">SAS</a> and <a href="https://www.rdocumentation.org/packages/gap/versions/1.1-20/topics/chow.test" target="_blank" rel="noopener">the R programming language</a>. Granted, many economists prefer to use these two languages instead of Python in my experience, so this wasn’t totally unexpected. But I knew future econometricians using Python would want something easy to use like I did, so I built it.</p>
 <h2 id="So-What-is-the-Chow-Break-Test"><a href="#So-What-is-the-Chow-Break-Test" class="headerlink" title="So What is the Chow Break Test?"></a>So What is the Chow Break Test?</h2><p>The Chow break test was developed by econometrician Gregory Chow in 1960 to test for structural breaks within a dataset. It uses different residual sum of squares to calculate whether or not your data is best represented with one linear model or multiple linear models broken up with breaks in time.</p>
 <p>Economic data can often have significant or violent break points that make a single linear regression line from being unfit to represent the data best. For examples of this kind of data <a href="http://www.statisticshowto.com/chow-test/" target="_blank" rel="noopener">Statistics How To outlined some</a>:</p>
-<blockquote>
 <ul>
-- Donations given to an organization before and after a natural disaster.
-- Stock market prices before and after Black Friday.
+<li>Donations given to an organization before and after a natural disaster.</li>
+<li>Stock market prices before and after Black Friday.</li>
 </ul>
-
-
-</blockquote>
 <p>And more. For this reason, sometimes data can be better modeled with two or more regression lines. If there is a known break point, the Chow break tests measures this by using this formula:<br><img src="/2018/01/05/Building-the-Python-chow-test-Package/chow-test-formula.png"><br>Where:</p>
 <ul>
 <li>RSS<sub>p</sub> is the residual sum of squares for the linear regression without breaks.</li>
@@ -228,7 +224,7 @@
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">chow_nom = (rss_total - (rss_1 + rss_2)) / <span class="number">2</span></span><br><span class="line">chow_denom = (rss_1+rss_2) / (n_1 + n_2 - (<span class="number">2</span> *<span class="number">2</span>))</span><br><span class="line">chow = chow_nom / chow_denom</span><br><span class="line"><span class="keyword">return</span> chow</span><br></pre></td></tr></table></figure>
 <p>With all this handled in the background and packaged up like this, you can then import and use it in your code!</p>
 <h2 id="Future-amp-Conclusion"><a href="#Future-amp-Conclusion" class="headerlink" title="Future &amp; Conclusion"></a>Future &amp; Conclusion</h2><p>Right now I would definitely say the module is in the alpha stage. Although it works with this specific use case, I’d like to expand it to be able to handle more time series break points, as well as models with more than one x-variable. This would be great functionality that I think a lot of economists would be interested in using.</p>
-<p>This mini project really opened my mind to the lack of econometric tools available in the Python ecosystem. Although Python is great for deep learning and some other machine learning tools, I feel like there has been a considerable lack of development in more traditional statistical tools. I hope that I can improve on this module and hopefully implement more stuff to add to the vibrant Python data science ecoysstem.</p>
+<p>This mini project really opened my mind to the lack of econometric tools available in the Python ecosystem. Although Python is great for deep learning and some other machine learning tools, I feel like there has been a considerable lack of development in more traditional statistical tools. I hope that I can improve on this module and hopefully implement more stuff to add to the vibrant Python data science ecosystem.</p>
 
   </div>
 </article>

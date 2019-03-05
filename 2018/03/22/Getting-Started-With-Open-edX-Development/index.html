@@ -26,7 +26,7 @@
 <meta property="og:description" content="The world of online learning is vast. There are a myriad of options available for the prospective client wishing to distribute training/education. Many of them paid, some of them free, all of them ha">
 <meta property="og:locale" content="default">
 <meta property="og:image" content="http://joshualoong.com/2018/03/22/Getting-Started-With-Open-edX-Development/classroom.jpg">
-<meta property="og:updated_time" content="2019-01-28T16:49:15.663Z">
+<meta property="og:updated_time" content="2019-03-05T22:59:47.949Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Getting Started With Local Open edX Development">
 <meta name="twitter:description" content="The world of online learning is vast. There are a myriad of options available for the prospective client wishing to distribute training/education. Many of them paid, some of them free, all of them ha">
@@ -169,32 +169,25 @@
 <h2 id="Installing-Open-edX-a-Dummy’s-Survival-Guide"><a href="#Installing-Open-edX-a-Dummy’s-Survival-Guide" class="headerlink" title="Installing Open edX: a (Dummy’s) Survival Guide"></a>Installing Open edX: a (Dummy’s) Survival Guide</h2><ol>
 <li>Install <a href="https://docs.docker.com/compose/install/" target="_blank" rel="noopener">docker-compose</a></li>
 <li>Make sure you have <strong>make</strong> and <strong>pip</strong> installed</li>
-<li>Install <a href="http://docs.python-guide.org/en/latest/dev/virtualenvs/#lower-level-virtualenv" target="_blank" rel="noopener">virtualenv</a></li><li>Clone this repository using:
-<figure class="highlight zsh"><table><tbody><td class="gutter"><pre>1<br></pre></td><td class="code"><pre>git clone https://github.com/democracykit/devstack.git<br></pre></td>
-</tbody></table></figure>
+<li>Install <a href="http://docs.python-guide.org/en/latest/dev/virtualenvs/#lower-level-virtualenv" target="_blank" rel="noopener">virtualenv</a></li>
+<li><p>Clone this repository using:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/democracykit/devstack.git</span><br></pre></td></tr></table></figure>
 </li>
-<li>Move into the project folder and create a virtualenv using:
-<figure class="highlight zsh"><table><tbody><td class="gutter"><pre>1<br>2<br></pre></td><td class="code"><pre>cd devstack<br>virtualenv democracykit<br></pre></td>
-</tbody></table></figure>
+<li><p>Move into the project folder and create a virtualenv using:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> devstack</span><br><span class="line">virtualenv democracykit</span><br></pre></td></tr></table></figure>
 </li>
-<li>Then install requirements like so:
-<figure class="highlight zsh"><table><tbody><td class="gutter"><pre>1<br></pre></td><td class="code"><pre>make requirements<br></pre></td>
-</tbody></table></figure>
+<li><p>Then install requirements like so:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">make requirements</span><br></pre></td></tr></table></figure>
 </li>
-<li>The Docker Compose file mounts a host volume for each service’s executing code by conducting this command:
-<figure class="highlight zsh"><table><tbody><td class="gutter"><pre>1<br></pre></td><td class="code"><pre>make dev.clone<br></pre></td>
-</tbody></table></figure>
+<li><p>The Docker Compose file mounts a host volume for each service’s executing code by conducting this command:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">make dev.clone</span><br></pre></td></tr></table></figure>
 </li>
-<li>Run the provision command to configure the superusers which may take a while (my installation took almost half an hour):
-<figure class="highlight zsh"><table><tbody><td class="gutter"><pre>1<br></pre></td><td class="code"><pre>make dev.provision<br></pre></td>
-</tbody></table></figure>
+<li><p>Run the provision command to configure the superusers which may take a while (my installation took almost half an hour):</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">make dev.provision</span><br></pre></td></tr></table></figure>
 </li>
-<li>Start the services (this may take up to 60 seconds to appear even after all the checks say done):
-<figure class="highlight zsh"><table><tbody><td class="gutter"><pre>1<br></pre></td><td class="code"><pre>make dev.up<br></pre></td>
-</tbody></table></figure>
+<li><p>Start the services (this may take up to 60 seconds to appear even after all the checks say done):</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">make dev.up</span><br></pre></td></tr></table></figure>
 </li>
-
-
 </ol>
 <p>And voila! You should have a version of Open EdX devstack running on your local machine. All of the services are running at the following links:</p>
 <div class="table-container">
@@ -230,7 +223,7 @@
 </table>
 </div>
 <p>Once you’re done with working for the day you can stop the services using:<br></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">make stop</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">make stop</span><br></pre></td></tr></table></figure>
 <h2 id="Actually-Developing"><a href="#Actually-Developing" class="headerlink" title="Actually Developing"></a>Actually Developing</h2><p>Now you’ve installed a wackload of code and files, and set up your databases. Now to actually develop the frontend you have to navigate this tree of folders.</p>
 <p>Just a tip, all of your frontend code that students will see is under the <code>edx-platform/lms</code> folder. What we’re doing is we’ve setup <a href="https://github.com/democracykit/open-edx-frontend" target="_blank" rel="noopener">a seperate repo</a> that will contain all of our code in this folder. That we can then push and pull code from.</p>
 <h2 id="That’s-It"><a href="#That’s-It" class="headerlink" title="That’s It!"></a>That’s It!</h2><p>I hope this helps simplify your understanding of how to launch your own local environment for Open edX development. I know it seems super confusing and daunting at first, and I hope this helps out anyone who wants to help out on the project or wants to develop their own courses.</p>
