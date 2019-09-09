@@ -281,6 +281,17 @@
 <script>talkyardServerUrl='https://comments-for-joshualoong-com.talkyard.net';</script>
 <script async defer src="https://c1.ty-cdn.net/-/talkyard-comments.min.js"></script>
 
+<script>
+var url = window.location.pathname.split("/")[1];
+
+if (url == 'tags'){
+    elems = document.getElementsByClassName("non-categorized-posts");
+    for (var i=0;i<elems.length;i+=1){
+        elems[i].style.display = 'none';
+    }
+}
+</script>
+
 
 <!-- Google Analytics -->
 

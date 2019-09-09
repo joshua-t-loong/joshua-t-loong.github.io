@@ -507,8 +507,8 @@
     
   </ul>
 
-<h1 style="margin-bottom: -1em">Academic Writing</h1>
-  <ul class="post-list">
+<h1 class="non-categorized-posts" style="margin-bottom: -1em">Academic Writing</h1>
+  <ul class="post-list non-categorized-posts">
     <h2>2019</h2>
     <li class="post-item">
       <div class="meta">
@@ -522,8 +522,8 @@
   </ul>
 
 
-  <h1 style="margin-bottom: -1em">The Neverending Reader Blog</h1>
-  <ul class="post-list">
+  <h1 class="non-categorized-posts" style="margin-bottom: -1em">The Neverending Reader Blog</h1>
+  <ul class="post-list non-categorized-posts">
     <h2>2017</h2>
     <li class="post-item">
       <div class="meta">
@@ -616,8 +616,8 @@
     </li>
   </ul>
 
-  <h1 style="margin-bottom: -1em">Bykme Blog</h1>
-  <ul class="post-list">
+  <h1 class="non-categorized-posts" style="margin-bottom: -1em">Bykme Blog</h1>
+  <ul class="post-list non-categorized-posts">
     <h2>2015</h2>
     <li class="post-item">
       <div class="meta">
@@ -724,6 +724,17 @@
 
 <script>talkyardServerUrl='https://comments-for-joshualoong-com.talkyard.net';</script>
 <script async defer src="https://c1.ty-cdn.net/-/talkyard-comments.min.js"></script>
+
+<script>
+var url = window.location.pathname.split("/")[1];
+
+if (url == 'tags'){
+    elems = document.getElementsByClassName("non-categorized-posts");
+    for (var i=0;i<elems.length;i+=1){
+        elems[i].style.display = 'none';
+    }
+}
+</script>
 
 
 <!-- Google Analytics -->
