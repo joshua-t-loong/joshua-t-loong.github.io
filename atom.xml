@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://joshualoong.com/"/>
-  <updated>2019-09-20T21:20:05.147Z</updated>
+  <updated>2019-09-20T21:30:21.250Z</updated>
   <id>http://joshualoong.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://joshualoong.com/2019/09/20/Appreciating-R-The-Ease-of-Testing-Linear-Model-Assumptions/"/>
     <id>http://joshualoong.com/2019/09/20/Appreciating-R-The-Ease-of-Testing-Linear-Model-Assumptions/</id>
     <published>2019-09-20T21:16:30.000Z</published>
-    <updated>2019-09-20T21:20:05.147Z</updated>
+    <updated>2019-09-20T21:30:21.250Z</updated>
     
     <summary type="html">
     
@@ -29,7 +29,8 @@
       
         
         
-          &lt;p&gt;I’d always heard about the package support for traditional statistics in R, but never really had the need or opportunity to dive into it
+          &lt;img src=&quot;/2019/09/20/Appreciating-R-The-Ease-of-Testing-Linear-Model-Assumptions/regression.png&quot;&gt;
+&lt;p&gt;I’d always heard about the package
         
       
     

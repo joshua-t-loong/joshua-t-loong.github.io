@@ -17,21 +17,22 @@
       gtag('config', 'UA-112023430-1');
     </script>
 
-    <meta name="description" content="I’d always heard about the package support for traditional statistics in R, but never really had the need or opportunity to dive into it until this year (from working at the amazing Best Buy Canada an">
+    <meta name="description" content="I’d always heard about the package support for traditional statistics in R, but never really had the need or opportunity to dive into it until this year (from working at the amazing Best Buy Canada a">
 <meta name="keywords" content="data-science">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Appreciating R: The Ease of Testing Linear Model Assumptions">
 <meta property="og:url" content="http://joshualoong.com/2019/09/20/Appreciating-R-The-Ease-of-Testing-Linear-Model-Assumptions/index.html">
 <meta property="og:site_name" content="Joshua Loong">
-<meta property="og:description" content="I’d always heard about the package support for traditional statistics in R, but never really had the need or opportunity to dive into it until this year (from working at the amazing Best Buy Canada an">
+<meta property="og:description" content="I’d always heard about the package support for traditional statistics in R, but never really had the need or opportunity to dive into it until this year (from working at the amazing Best Buy Canada a">
 <meta property="og:locale" content="default">
+<meta property="og:image" content="http://joshualoong.com/2019/09/20/Appreciating-R-The-Ease-of-Testing-Linear-Model-Assumptions/regression.png">
 <meta property="og:image" content="http://joshualoong.com/2019/09/20/Appreciating-R-The-Ease-of-Testing-Linear-Model-Assumptions/diagnostic-stats.PNG">
 <meta property="og:image" content="http://joshualoong.com/2019/09/20/Appreciating-R-The-Ease-of-Testing-Linear-Model-Assumptions/diagnostic-plots.png">
-<meta property="og:updated_time" content="2019-09-20T21:20:05.147Z">
+<meta property="og:updated_time" content="2019-09-20T21:30:21.250Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Appreciating R: The Ease of Testing Linear Model Assumptions">
-<meta name="twitter:description" content="I’d always heard about the package support for traditional statistics in R, but never really had the need or opportunity to dive into it until this year (from working at the amazing Best Buy Canada an">
-<meta name="twitter:image" content="http://joshualoong.com/2019/09/20/Appreciating-R-The-Ease-of-Testing-Linear-Model-Assumptions/diagnostic-stats.PNG">
+<meta name="twitter:description" content="I’d always heard about the package support for traditional statistics in R, but never really had the need or opportunity to dive into it until this year (from working at the amazing Best Buy Canada a">
+<meta name="twitter:image" content="http://joshualoong.com/2019/09/20/Appreciating-R-The-Ease-of-Testing-Linear-Model-Assumptions/regression.png">
     
     
         
@@ -157,7 +158,8 @@
   
 
   <div class="content" itemprop="articleBody">
-    <p>I’d always heard about the package support for traditional statistics in R, but never really had the need or opportunity to dive into it until this year (from working at the amazing Best Buy Canada and the quantitative biology classes I’m taking right now). And while I’m still getting used to it, I’ve been slowly getting a much bigger appreciation for how useful it really can be.</p>
+    <img src="/2019/09/20/Appreciating-R-The-Ease-of-Testing-Linear-Model-Assumptions/regression.png">
+<p>I’d always heard about the package support for traditional statistics in R, but never really had the need or opportunity to dive into it until this year (from working at the amazing Best Buy Canada and the quantitative biology classes I’m taking right now). And while I’m still getting used to it, I’ve been slowly getting a much bigger appreciation for how useful it really can be.</p>
 <p>I can say it’s great to use, but I doubt that will sway you if you’re a heavy Python user (as it did not with me) without a really, really concrete example. I hope this example gives you a peek at the potential uses that I myself am still discovering </p>
 <h2 id="Assumptions-Testing"><a href="#Assumptions-Testing" class="headerlink" title="Assumptions Testing"></a>Assumptions Testing</h2><p>A HUGE (and I mean <strong>HUGE</strong>) deal in science is good statistical practice. Without good statistical practice much of the research and insights we produce are useless, and an incredibly important aspect of it is assumptions testing<sup>[1]</sup>. </p>
 <p>All statistical models and tests have underlying mathematical assumptions on the types of conditions upon we can generate reliable results (Hoekstra et al., 2012). What this means is that before we go off and generate predictions, p-values and correlation coefficients, we need to understand whether our data fits certain assumption criteria in order to avoid Type I or II errors given the technique at hand.</p>
