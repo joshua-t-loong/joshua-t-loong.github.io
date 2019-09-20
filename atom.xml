@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://joshualoong.com/"/>
-  <updated>2019-05-25T22:15:25.663Z</updated>
+  <updated>2019-09-20T21:20:05.147Z</updated>
   <id>http://joshualoong.com/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Appreciating R: The Ease of Testing Linear Model Assumptions</title>
+    <link href="http://joshualoong.com/2019/09/20/Appreciating-R-The-Ease-of-Testing-Linear-Model-Assumptions/"/>
+    <id>http://joshualoong.com/2019/09/20/Appreciating-R-The-Ease-of-Testing-Linear-Model-Assumptions/</id>
+    <published>2019-09-20T21:16:30.000Z</published>
+    <updated>2019-09-20T21:20:05.147Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;I’d always heard about the package support for traditional statistics in R, but never really had the need or opportunity to dive into it
+        
+      
+    
+    </summary>
+    
+    
+      <category term="data-science" scheme="http://joshualoong.com/tags/data-science/"/>
+    
+  </entry>
   
   <entry>
     <title>The Favourite Books of Almost 200 Students in Georgia</title>
@@ -476,31 +500,6 @@
     
     
       <category term="software-development" scheme="http://joshualoong.com/tags/software-development/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Review - The Nordic Model</title>
-    <link href="http://joshualoong.com/2017/11/27/Review-The-Nordic-Model/"/>
-    <id>http://joshualoong.com/2017/11/27/Review-The-Nordic-Model/</id>
-    <published>2017-11-27T05:00:00.000Z</published>
-    <updated>2019-01-28T17:19:56.461Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;&lt;strong&gt;The Nordic Model: Scandanavia since 1945&lt;/strong&gt; by Mary Hilson&lt;/p&gt;
-&lt;p&gt;&lt;img height=&quot;600&quot;
-        
-      
-    
-    </summary>
-    
-    
-      <category term="book-review" scheme="http://joshualoong.com/tags/book-review/"/>
     
   </entry>
   
