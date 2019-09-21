@@ -28,7 +28,7 @@
 <meta property="og:image" content="http://joshualoong.com/2019/09/20/Appreciating-R-The-Ease-of-Testing-Linear-Model-Assumptions/regression.png">
 <meta property="og:image" content="http://joshualoong.com/2019/09/20/Appreciating-R-The-Ease-of-Testing-Linear-Model-Assumptions/diagnostic-stats.PNG">
 <meta property="og:image" content="http://joshualoong.com/2019/09/20/Appreciating-R-The-Ease-of-Testing-Linear-Model-Assumptions/diagnostic-plots.png">
-<meta property="og:updated_time" content="2019-09-20T21:30:21.250Z">
+<meta property="og:updated_time" content="2019-09-21T21:39:19.335Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Appreciating R: The Ease of Testing Linear Model Assumptions">
 <meta name="twitter:description" content="I’d always heard about the package support for traditional statistics in R, but never really had the need or opportunity to dive into it until this year (from working at the amazing Best Buy Canada a">
@@ -175,7 +175,7 @@
 </li>
 <li><p><strong>Heteroscedasticity</strong> -  the respective stat tests for the null that the variance of your residuals is relatively constant.</p>
 </li>
-<li><p><strong>Normality</strong> - skewness and kurtosis tests help you understand if your data fits a normal distribution. If the null is rejected you probably need to transform your data in some way (like a log transform).</p>
+<li><p><strong>Normality</strong> - skewness and kurtosis tests help you understand if the residuals of your data fit a normal distribution. If the null is rejected you probably need to transform your data in some way (like a log transform). This can also be assessed by looking at the normal probability plot it generates.</p>
 </li>
 </ol>
 <p>Furthermore, the diagnostic plots also let you understand the relation between your data and these assumptions visually. Other useful capabilities are the link function test which is used for understanding whether the underlying data is categorical or continuous. </p>
