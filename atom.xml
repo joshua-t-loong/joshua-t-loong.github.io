@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://joshualoong.com/"/>
-  <updated>2019-09-23T18:48:16.416Z</updated>
+  <updated>2020-01-08T23:00:46.107Z</updated>
   <id>http://joshualoong.com/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Books Read in 2019</title>
+    <link href="http://joshualoong.com/2020/01/08/Books-Read-in-2019/"/>
+    <id>http://joshualoong.com/2020/01/08/Books-Read-in-2019/</id>
+    <published>2020-01-08T23:00:44.000Z</published>
+    <updated>2020-01-08T23:00:46.107Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;img src=&quot;/2020/01/08/Books-Read-in-2019/books.jpg&quot;&gt; 
+&lt;p&gt;It’s that time of year again! I’ve been doing these yearly summaries of my reading
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>Appreciating R: The Ease of Testing Linear Model Assumptions</title>
@@ -476,31 +499,6 @@
     
     
       <category term="economics" scheme="http://joshualoong.com/tags/economics/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Making PDF-Join</title>
-    <link href="http://joshualoong.com/2017/12/22/Making-PDF-Join/"/>
-    <id>http://joshualoong.com/2017/12/22/Making-PDF-Join/</id>
-    <published>2017-12-22T05:00:00.000Z</published>
-    <updated>2019-01-28T16:49:13.986Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;img src=&quot;/2017/12/22/Making-PDF-Join/pdf-join.png&quot;&gt;
-&lt;p&gt;My first &lt;strong&gt;real&lt;/strong&gt; foray into programming was building web sites and
-        
-      
-    
-    </summary>
-    
-    
-      <category term="software-development" scheme="http://joshualoong.com/tags/software-development/"/>
     
   </entry>
   
