@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://joshualoong.com/"/>
-  <updated>2020-01-08T23:00:46.107Z</updated>
+  <updated>2020-10-18T22:00:25.214Z</updated>
   <id>http://joshualoong.com/</id>
   
   <author>
@@ -17,10 +17,33 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Journal Article: In The Blink of an Eye - Reading Mental States From Briefly Presented Eye Regions</title>
+    <link href="http://joshualoong.com/2020/10/18/In-The-Blink-of-an-Eye/"/>
+    <id>http://joshualoong.com/2020/10/18/In-The-Blink-of-an-Eye/</id>
+    <published>2020-10-18T21:54:45.000Z</published>
+    <updated>2020-10-18T22:00:25.214Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;An article I’ve been supporting has finally been published in I-Perception! &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Gunnar Schmidtmann, Joshua
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
     <title>Books Read in 2019</title>
     <link href="http://joshualoong.com/2020/01/08/Books-Read-in-2019/"/>
     <id>http://joshualoong.com/2020/01/08/Books-Read-in-2019/</id>
-    <published>2020-01-08T23:00:44.000Z</published>
+    <published>2020-01-09T02:00:44.000Z</published>
     <updated>2020-01-08T23:00:46.107Z</updated>
     
     <summary type="html">
@@ -43,7 +66,7 @@
     <title>Appreciating R: The Ease of Testing Linear Model Assumptions</title>
     <link href="http://joshualoong.com/2019/09/20/Appreciating-R-The-Ease-of-Testing-Linear-Model-Assumptions/"/>
     <id>http://joshualoong.com/2019/09/20/Appreciating-R-The-Ease-of-Testing-Linear-Model-Assumptions/</id>
-    <published>2019-09-20T21:16:30.000Z</published>
+    <published>2019-09-21T00:16:30.000Z</published>
     <updated>2019-09-23T18:48:16.416Z</updated>
     
     <summary type="html">
@@ -68,7 +91,7 @@
     <title>The Favourite Books of Almost 200 Students in Georgia</title>
     <link href="http://joshualoong.com/2019/05/25/The-Favourite-Books-of-Almost-200-Students-in-Georgia/"/>
     <id>http://joshualoong.com/2019/05/25/The-Favourite-Books-of-Almost-200-Students-in-Georgia/</id>
-    <published>2019-05-25T22:14:01.000Z</published>
+    <published>2019-05-26T01:14:01.000Z</published>
     <updated>2019-05-25T22:15:25.663Z</updated>
     
     <summary type="html">
@@ -91,7 +114,7 @@
     <title>Preprint: Temporal processing of facial expressions of mental states</title>
     <link href="http://joshualoong.com/2019/04/10/Preprint-Temporal-processing-of-facial-expressions-of-mental-states/"/>
     <id>http://joshualoong.com/2019/04/10/Preprint-Temporal-processing-of-facial-expressions-of-mental-states/</id>
-    <published>2019-04-10T19:57:06.000Z</published>
+    <published>2019-04-10T22:57:06.000Z</published>
     <updated>2019-04-10T19:57:06.766Z</updated>
     
     <summary type="html">
@@ -113,7 +136,7 @@
     <title>Finding the Most Published Author in the New Yorker</title>
     <link href="http://joshualoong.com/2019/03/01/Finding-the-Most-Published-Author-in-the-New-Yorker/"/>
     <id>http://joshualoong.com/2019/03/01/Finding-the-Most-Published-Author-in-the-New-Yorker/</id>
-    <published>2019-03-01T05:10:21.000Z</published>
+    <published>2019-03-01T08:10:21.000Z</published>
     <updated>2019-03-02T18:12:10.979Z</updated>
     
     <summary type="html">
@@ -136,7 +159,7 @@
     <title>Programmatically Creating a 500 Book Cover Collage</title>
     <link href="http://joshualoong.com/2019/02/05/Programmatically-Creating-a-500-Book-Cover-Collage/"/>
     <id>http://joshualoong.com/2019/02/05/Programmatically-Creating-a-500-Book-Cover-Collage/</id>
-    <published>2019-02-05T19:23:21.000Z</published>
+    <published>2019-02-05T22:23:21.000Z</published>
     <updated>2019-02-05T19:23:22.171Z</updated>
     
     <summary type="html">
@@ -159,7 +182,7 @@
     <title>Custom Git Commands - Making Git-Status-Size</title>
     <link href="http://joshualoong.com/2018/10/22/Custom-Git-Commands-Making-Git-Status-Size/"/>
     <id>http://joshualoong.com/2018/10/22/Custom-Git-Commands-Making-Git-Status-Size/</id>
-    <published>2018-10-22T04:00:00.000Z</published>
+    <published>2018-10-22T07:00:00.000Z</published>
     <updated>2019-03-05T22:54:59.334Z</updated>
     
     <summary type="html">
@@ -184,7 +207,7 @@
     <title>Fitting Polynomial Regressions in Python</title>
     <link href="http://joshualoong.com/2018/10/03/Fitting-Polynomial-Regressions-in-Python/"/>
     <id>http://joshualoong.com/2018/10/03/Fitting-Polynomial-Regressions-in-Python/</id>
-    <published>2018-10-03T04:00:00.000Z</published>
+    <published>2018-10-03T07:00:00.000Z</published>
     <updated>2019-09-09T20:33:40.854Z</updated>
     
     <summary type="html">
@@ -209,7 +232,7 @@
     <title>Bank Services for Community Projects</title>
     <link href="http://joshualoong.com/2018/09/24/Bank-Services-for-Community-Projects/"/>
     <id>http://joshualoong.com/2018/09/24/Bank-Services-for-Community-Projects/</id>
-    <published>2018-09-24T04:00:00.000Z</published>
+    <published>2018-09-24T07:00:00.000Z</published>
     <updated>2019-03-05T22:55:57.021Z</updated>
     
     <summary type="html">
@@ -234,7 +257,7 @@
     <title>Improving My Hexo Blogging Workflow</title>
     <link href="http://joshualoong.com/2018/07/30/Improving-My-Hexo-Blogging-Workflow/"/>
     <id>http://joshualoong.com/2018/07/30/Improving-My-Hexo-Blogging-Workflow/</id>
-    <published>2018-07-30T04:00:00.000Z</published>
+    <published>2018-07-30T07:00:00.000Z</published>
     <updated>2019-01-28T16:49:16.106Z</updated>
     
     <summary type="html">
@@ -259,7 +282,7 @@
     <title>Topic Modeling Song Lyrics - An Exploration in Unsupervised Text Analytics</title>
     <link href="http://joshualoong.com/2018/07/03/Topic-Modelling-Song-Lyrics-An-Exploration-in-Unsupervised-Text-Analytics/"/>
     <id>http://joshualoong.com/2018/07/03/Topic-Modelling-Song-Lyrics-An-Exploration-in-Unsupervised-Text-Analytics/</id>
-    <published>2018-07-03T04:00:00.000Z</published>
+    <published>2018-07-03T07:00:00.000Z</published>
     <updated>2019-01-28T17:21:55.901Z</updated>
     
     <summary type="html">
@@ -284,7 +307,7 @@
     <title>Ontario Municipal per Capita Transit Spending</title>
     <link href="http://joshualoong.com/2018/03/27/Ontario-Municipal-per-Capita-Transit-Spending/"/>
     <id>http://joshualoong.com/2018/03/27/Ontario-Municipal-per-Capita-Transit-Spending/</id>
-    <published>2018-03-27T04:00:00.000Z</published>
+    <published>2018-03-27T07:00:00.000Z</published>
     <updated>2019-01-28T16:49:15.882Z</updated>
     
     <summary type="html">
@@ -309,7 +332,7 @@
     <title>Getting Started With Local Open edX Development</title>
     <link href="http://joshualoong.com/2018/03/22/Getting-Started-With-Open-edX-Development/"/>
     <id>http://joshualoong.com/2018/03/22/Getting-Started-With-Open-edX-Development/</id>
-    <published>2018-03-22T04:00:00.000Z</published>
+    <published>2018-03-22T07:00:00.000Z</published>
     <updated>2019-03-05T22:59:47.949Z</updated>
     
     <summary type="html">
@@ -334,7 +357,7 @@
     <title>The Values Behind Chalmers Cards</title>
     <link href="http://joshualoong.com/2018/03/01/The-Values-Behind-Chalmers-Cards/"/>
     <id>http://joshualoong.com/2018/03/01/The-Values-Behind-Chalmers-Cards/</id>
-    <published>2018-03-01T05:00:00.000Z</published>
+    <published>2018-03-01T08:00:00.000Z</published>
     <updated>2019-01-28T16:49:15.406Z</updated>
     
     <summary type="html">
@@ -359,7 +382,7 @@
     <title>Using Civic Tech to Combat the Homelessness Crisis in Toronto</title>
     <link href="http://joshualoong.com/2018/02/07/Using-Civic-Tech-to-Combat-the-Homelessness-Crisis-in-Toronto/"/>
     <id>http://joshualoong.com/2018/02/07/Using-Civic-Tech-to-Combat-the-Homelessness-Crisis-in-Toronto/</id>
-    <published>2018-02-07T05:00:00.000Z</published>
+    <published>2018-02-07T08:00:00.000Z</published>
     <updated>2019-02-11T02:22:31.230Z</updated>
     
     <summary type="html">
@@ -384,7 +407,7 @@
     <title>Applying the Bradford Hill Criteria to Economics and Policy</title>
     <link href="http://joshualoong.com/2018/01/25/Applying-the-Bradford-Hill-Criteria-to-Economics-and-Policy/"/>
     <id>http://joshualoong.com/2018/01/25/Applying-the-Bradford-Hill-Criteria-to-Economics-and-Policy/</id>
-    <published>2018-01-25T05:00:00.000Z</published>
+    <published>2018-01-25T08:00:00.000Z</published>
     <updated>2019-01-28T16:49:15.036Z</updated>
     
     <summary type="html">
@@ -409,7 +432,7 @@
     <title>Digital Marketing in the Public Policy Space</title>
     <link href="http://joshualoong.com/2018/01/21/Digital-Marketing-in-the-Public-Policy-Space/"/>
     <id>http://joshualoong.com/2018/01/21/Digital-Marketing-in-the-Public-Policy-Space/</id>
-    <published>2018-01-21T05:00:00.000Z</published>
+    <published>2018-01-21T08:00:00.000Z</published>
     <updated>2019-01-28T16:49:14.838Z</updated>
     
     <summary type="html">
@@ -434,7 +457,7 @@
     <title>Is an Internet Forum for Public Policy Possible?</title>
     <link href="http://joshualoong.com/2018/01/12/Is-an-Internet-Forum-for-Public-Policy-Possible/"/>
     <id>http://joshualoong.com/2018/01/12/Is-an-Internet-Forum-for-Public-Policy-Possible/</id>
-    <published>2018-01-12T05:00:00.000Z</published>
+    <published>2018-01-12T08:00:00.000Z</published>
     <updated>2019-01-28T16:49:14.698Z</updated>
     
     <summary type="html">
@@ -458,7 +481,7 @@
     <title>Building the Python chow_test Package</title>
     <link href="http://joshualoong.com/2018/01/05/Building-the-Python-chow-test-Package/"/>
     <id>http://joshualoong.com/2018/01/05/Building-the-Python-chow-test-Package/</id>
-    <published>2018-01-05T05:00:00.000Z</published>
+    <published>2018-01-05T08:00:00.000Z</published>
     <updated>2019-03-05T23:02:07.198Z</updated>
     
     <summary type="html">
@@ -475,30 +498,6 @@
     
     
       <category term="data-science" scheme="http://joshualoong.com/tags/data-science/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Macroeconomic Effects of Canada&#39;s Minimum Wage Increases</title>
-    <link href="http://joshualoong.com/2018/01/03/Macroeconomic-Effects-of-Canada-s-Miniumum-Wage-Increases/"/>
-    <id>http://joshualoong.com/2018/01/03/Macroeconomic-Effects-of-Canada-s-Miniumum-Wage-Increases/</id>
-    <published>2018-01-03T05:00:00.000Z</published>
-    <updated>2019-01-28T16:49:14.173Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;There’s a lot of attention in the media right now about &lt;a href=&quot;http://www.bankofcanada.ca/wp-content/uploads/2017/12/san2017-26.pdf&quot;
-        
-      
-    
-    </summary>
-    
-    
-      <category term="economics" scheme="http://joshualoong.com/tags/economics/"/>
     
   </entry>
   
